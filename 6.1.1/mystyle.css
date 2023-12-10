@@ -1,0 +1,432 @@
+body { overflow: hidden;}
+img{
+    opacity: 0.95;
+}
+#background{
+    background-image: url("images/anh-nen-duoi-day-dai-duong_110514767.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*SHARK*/
+#shark{
+    left: -300px; top:100px;
+    position:  absolute;
+    animation-name: shark;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+#shark2{
+    left: 1500px; top:500px; transform: scaleX(-1);
+    position:  absolute;
+    animation-name: shark2;
+    animation-delay: 20s;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes shark{
+    0%{left: -200px;}
+    100%{left: 3000px; top:500px;}
+}
+@keyframes shark2{
+    0%{left: 1500px;}
+    100%{left: -300px; top:100px;}
+}
+/*CRAB*/
+#crab1{
+    left: 20px; top:500px;
+    position:  absolute;
+    animation-name: crab1;
+    animation-duration: 70s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+#crab2{
+    left: 90px; top:500px;
+    position:  absolute;
+    animation-name: crab2;
+    animation-duration: 110s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+#crab3{
+    right: 40px; top:500px;
+    position:  absolute;
+    animation-name: crab3;
+    animation-duration: 90s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+#crab4{
+    right: 90px; top:500px;
+    position:  absolute;
+    animation-name: crab4;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes crab1{
+    0%{left: 20px; top:600px;}
+    50%{left: 500px; top: 600px;}
+    100%{left: 20px; top:600px}
+}
+@keyframes crab2{
+    0%{left: 90px; top:600px}
+    50%{left: 1000px; top: 600px;}
+    100%{left: 90px; top:600px}
+}
+@keyframes crab3{
+    0%{right: 40px; top:600px}
+    50%{right: 700px; top: 600px;}
+    100%{right: 40px; top:600px}
+}
+@keyframes crab4{
+    0%{right: 90px; top:600px}
+    50%{right: 400px; top: 600px;}
+    100%{right: 90px; top:600px}
+}
+/*BOT BIEN*/
+#botbien{
+    right: 90px; top:600px;
+    position:  absolute;
+    animation-name: bot;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+#botbien1{
+    left: 90px; top:600px;
+    position:  absolute;
+    animation-name: bot;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+#botbien2{
+    right: 200px; top:600px;
+    position:  absolute;
+    animation-name: bot;
+    animation-duration: 18s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+#botbien3{
+    left: 250px; top:600px;
+    position:  absolute;
+    animation-name: bot;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+#botbien4{
+    right: 400px; top:600px;
+    position:  absolute;
+    animation-name: bot;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+#botbien5{
+    left: 600px; top:600px;
+    position:  absolute;
+    animation-name: bot;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes bot{
+    0%{top:600px; opacity: 0.8}
+    100%{top:-100px; opacity: -0;}
+}
+/*TURTLE*/
+#rua{
+    left: -40px; bottom:30px;
+    position:  absolute;
+    animation-name: rua;
+    animation-duration: 30s;
+    animation-delay: 40;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes rua{
+    0%{left: -40px; bottom:30px;}
+    50%{left: 1000px; bottom: 150px;}
+    100%{left: 2000px; bottom:70px;}
+}
+/*DIVER*/
+#bot{
+    animation-name: botb;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;  
+}
+@keyframes botb{
+    100%{opacity: 0;}
+}
+#diver1{
+    left: -300px; bottom:40px;
+    position:  absolute;
+    animation-name: diver1;
+    animation-duration: 25s;
+    animation-delay: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes diver1{
+    0%{left: -300px; bottom:40px;}
+    100%{left: 2300px; bottom:40px;}
+}
+#diver2{
+    left: -300px; bottom:60px;
+    position:  absolute;
+    animation-name: diver2;
+    animation-duration: 23s;
+    animation-delay: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes diver2{
+    0%{left: -300px; bottom:60px;}
+    50%{left: 1000px; bottom: 150px;}
+    100%{left: 2000px; bottom:100px;}
+}
+#diver3{
+    left: -300px; top:60px;
+    position:  absolute;
+    animation-name: diver3;
+    animation-duration: 24s;
+    animation-delay: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes diver3{
+    0%{left: -300px; top:60px;}
+    50%{left: 1000px; top: 100px;}
+    100%{left: 2000px; top:80px;}
+}
+/*FISH*/
+#fish1{
+    left: -200px; top:200px;
+    position:  absolute;
+    animation-name: fish1;
+    animation-duration: 20s;
+    animation-delay: 14s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes fish1{
+    0%{left: -200px; top:200px;}
+    50%{left: 1000px; top: 150px;}
+    100%{left: 2000px; top:0px;}
+}
+#fish2{
+    left: -200px; bottom:400px;
+    position:  absolute;
+    animation-name: fish2;
+    animation-duration: 30s;
+    animation-delay: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes fish2{
+    0%{left: -200px; bottom:400px;}
+    50%{left: 1000px; bottom: 150px;}
+    100%{left: 2000px; bottom:0px;}
+}
+#fish3{
+    left: -200px; top:400px;
+    position:  absolute;
+    animation-name: fish3;
+    animation-duration: 14s;
+    animation-delay: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes fish3{
+    0%{left: -200px; top:400px;}
+    50%{left: 1000px; top: 150px;}
+    100%{left: 1500px; top:0px;}
+}
+#fish4{
+    right: -200px; top:400px; transform: scaleX(-1);
+    position:  absolute;
+    animation-name: fish4;
+    animation-duration: 18s;
+    animation-delay: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes fish4{
+    0%{right: -200px; top:400px;}
+    25%{right: 300px; top:200px;}
+    50%{right: 500px; top:500px;}
+    75%{right: 800px; top:400px;}
+    100%{right: 1500px; top:300px;}
+}
+#fish5{
+    right: -200px; bottom:400px; transform: scaleX(-1);
+    position:  absolute;
+    animation-name: fish5;
+    animation-duration: 18s;
+    animation-delay: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes fish5{
+    0%{right: -200px; bottom:400px;}
+    25%{right: 500px; bottom:400px;}
+    50%{right: 800px; bottom:400px;}
+    75%{right: 1000px; bottom:400px;}
+    100%{right: 1500px; bottom:400px;}
+}
+#ca1{
+    right: -200px; bottom:400px; transform: scaleX(-1);
+    position:  absolute;
+    animation-name: ca-right;
+    animation-duration: 20s;
+    animation-delay: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+#ca2{
+    left: -200px; bottom:200px;
+    position:  absolute;
+    animation-name: ca-left;
+    animation-duration: 23s;
+    animation-delay: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+#ca-a1{
+    right: -200px; bottom:200px; transform: scaleX(-1);
+    position:  absolute;
+    animation-name: ca-right;
+    animation-duration: 30s;
+    animation-delay: 53s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+#ca-a2{
+    left: -200px; bottom:500px;
+    position:  absolute;
+    animation-name: ca-left;
+    animation-duration: 23s;
+    animation-delay: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+#ca-b1{
+    right: -200px; bottom:450px; transform: scaleX(-1);
+    position:  absolute;
+    animation-name: ca-right;
+    animation-duration: 30s;
+    animation-delay: 18s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+#ca-b2{
+    left: -200px; bottom:300px;
+    position:  absolute;
+    animation-name: ca-left;
+    animation-duration: 23s;
+    animation-delay: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+#ca-c1{
+    right: -200px; bottom:400px; transform: scaleX(-1);
+    position:  absolute;
+    animation-name: ca-right;
+    animation-duration: 20s;
+    animation-delay: 51s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+#ca-c2{
+    left: -200px; bottom:490px; transform: scaleX(-1);
+    position:  absolute;
+    animation-name: ca-right;
+    animation-duration: 40s;
+    animation-delay: 72s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+#ca-d1{
+    right: -200px; bottom:250px; transform: scaleX(-1);
+    position:  absolute;
+    animation-name: ca-right;
+    animation-duration: 25s;
+    animation-delay: 28s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+#ca-d2{
+    left: -200px; bottom:300px;
+    position:  absolute;
+    animation-name: ca-left;
+    animation-duration: 29s;
+    animation-delay: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+#ca-e1{
+    right: -200px; bottom:300px; transform: scaleX(-1);
+    position:  absolute;
+    animation-name: ca-right;
+    animation-duration: 30s;
+    animation-delay: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+#ca-e2{
+    left: -200px; bottom:350px; transform: scaleX(-1);
+    position:  absolute;
+    animation-name: ca-right;
+    animation-duration: 22s;
+    animation-delay: 90s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes ca-left{
+    0%{left: -200px}
+    100%{left: 1400px}
+}
+@keyframes ca-right{
+    0%{right: -200px}
+    100%{right: 1400px}
+}

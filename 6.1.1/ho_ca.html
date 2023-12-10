@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ cá vui nhộn</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body id="background">
+    <div1 id="demo"></div1>
+        <div style="margin: 10px;">
+            <div id="namesound" style="display: inline; width: 500px; background-color: rgba(255, 255, 255, 0.171); padding: 4px;">...</div>
+            <div style="position: absolute; margin-top: -20px; margin-left: 1230px; color: black; background-color: rgba(27, 224, 224, 0.411); padding: 4px;"><b>| Hình nền   |</b></div>
+        </div>
+        <div style="position: absolute; margin-left: 1300px;">
+            <input type="button" title="Đổi ảnh nền" id="btn2" value=" >> " style="opacity: 0.8;"/>
+        </div>
+        <div style="position: absolute; margin-left: 1250px; ">
+            <input type="button" title="Đổi ảnh nền" id="btn1" value=" << " hidden style="opacity: 0.8;"/>
+        </div>
+        <button id="play" onclick="playAudio()" type="button" style="position: absolute; margin-left: 0px; opacity: 0.8;">>></button>
+        <button id="pause" onclick="pauseAudio()" type="button" style="position: absolute; margin-left: 50px;  opacity: 0.8; " disabled>Pause</button> 
+
+        <audio loop id="myAudio">
+            <source src="sound/underwater-ambiencewav-14428.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="myAudio1">
+            <source src="sound/yt1s.com - Piano và tiếng sóng biển  Nhạc thư giãn không lời nhẹ nhàng  Relaxing music.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="myAudio2">
+            <source src="sound/yt1s (mp3cut.net).mp3" type="audio/mpeg">
+        </audio>
+    <div id="content">
+        <div id="shark"><img src="images/shark.png"; width="200px"; height="auto"></div>
+        <div id="botbien"><img src="images/Water-Bubbles-PNG-Clipart.png"; width="80px"; height="auto"></div>
+        <div id="botbien1"><img src="images/Water-Bubbles-PNG-Clipart.png"; width="80px"; height="auto"></div>
+        <div id="shark2"><img src="images/shark.png"; width="auto"; height="auto"></div>
+        <div id="botbien2"><img src="images/Water-Bubbles-PNG-Clipart.png"; width="80px"; height="auto"></div>
+        <div id="botbien5"><img src="images/Water-Bubbles-PNG-Clipart.png"; width="80px"; height="auto"></div>
+        <div id="crab1"><img src="images/cua.png"; width="50px"; height="auto"></div>
+        <div id="crab2"><img src="images/cua.png"; width="50px"; height="auto"></div>
+        <div id="crab3"><img src="images/cua.png"; width="50px"; height="auto"></div>
+        <div id="crab4"><img src="images/cua.png"; width="50px"; height="auto"></div>
+        <div id="rua"><img src="images/turtle.png"; width="80px"; height="auto"></div>
+        <div id="diver2">
+            <img src="images/diver2.png"; width="100px"; height="auto"  style="display: flex; position: absolute;">
+            <img id="bot" src="images/bubbles.png"; width="25px"; height="auto" style="display: flex; position: relative; margin-top: 0px; margin-left: 45px;">
+        </div>
+        <div id="fish4">
+            <img src="images/goldFishSchool.png"; width="40px"; height="auto" style="display: flex; position: absolute;">
+            <img src="images/goldFishSchool.png"; width="40px"; height="auto" style="position: relative; margin-top: 30px; margin-left: 50px">
+            <img src="images/goldFishSchool.png"; width="40px"; height="auto" style="display: flex; position: relative; margin-top: -30px;">
+        </div>
+        <div id="fish3">
+            <img src="images/goldFishSchool.png"; width="70px"; height="auto" style="display: flex; position: absolute;">
+            <img src="images/goldFishSchool.png"; width="70px"; height="auto" style="position: relative; margin-top: 50px; margin-left: 90px">
+            <img src="images/goldFishSchool.png"; width="70px"; height="auto" style="display: flex; position: relative; margin-top: -30px;">
+        </div>
+        <div id="diver1">
+            <img src="images/diver1.png"; width="200px"; height="auto"  style="display: flex; position: absolute;">
+            <img id="bot" src="images/bubbles.png"; width="50px"; height="auto" style="display: flex; position: relative; margin-top: 0px; margin-left: 90px;">
+        </div>
+        <div id="fish2">
+            <img src="images/goldFishSchool.png"; width="60px"; height="auto" style="display: flex; position: absolute;">
+            <img src="images/goldFishSchool.png"; width="60px"; height="auto" style="position: relative; margin-top: 50px; margin-left: 70px">
+            <img src="images/goldFishSchool.png"; width="60px"; height="auto" style="display: flex; position: relative; margin-top: -30px;">
+        </div>
+        <div id="diver3">
+            <img src="images/diver3.png"; width="220px"; height="auto"  style="display: flex; position: absolute;">
+            <img id="bot" src="images/bubbles.png"; width="55px"; height="auto" style="display: flex; position: relative; margin-top: 0px; margin-left: 100px;">
+        </div>
+        <div id="fish1">
+            <img src="images/goldFishSchool.png"; width="90px"; height="auto" style="display: flex; position: absolute;">
+            <img src="images/goldFishSchool.png"; width="90px"; height="auto" style="position: relative; margin-top: 50px; margin-left: 110px">
+            <img src="images/goldFishSchool.png"; width="90px"; height="auto" style="display: flex; position: relative; margin-top: -30px;">
+        </div>
+        <div id="fish5">
+            <img src="images/goldFishSchool.png"; width="90px"; height="auto" style="display: flex; position: absolute;">
+            <img src="images/goldFishSchool.png"; width="90px"; height="auto" style="position: relative; margin-top: 50px; margin-left: 100px">
+            <img src="images/goldFishSchool.png"; width="90px"; height="auto" style="display: flex; position: relative; margin-top: -30px;">
+        </div>
+        <div id="ca1"><img src="images/ca.png"; width="100px"; height="auto"></div>
+        <div id="ca-a2"><img src="images/ca-a.png"; width="100px"; height="auto"></div>
+        <div id="ca-b1"><img src="images/ca-b.png"; width="90px"; height="auto"></div>
+        <div id="ca-c1"><img src="images/ca-c.png"; width="70px"; height="auto"></div>
+        <div id="ca-d2"><img src="images/ca-d.png"; width="90px"; height="auto"></div>
+        <div id="ca-e2"><img src="images/ca-e.png"; width="100px"; height="auto"></div>
+        <div id="ca2"><img src="images/ca.png"; width="120px"; height="auto"></div>
+        <div id="ca-a1"><img src="images/ca-a.png"; width="120px"; height="auto"></div>
+        <div id="ca-b2"><img src="images/ca-b.png"; width="120px"; height="auto"></div>
+        <div id="ca-c2"><img src="images/ca-c.png"; width="100px"; height="auto"></div>
+        <div id="ca-d1"><img src="images/ca-d.png"; width="120px"; height="auto"></div>
+        <div id="ca-e1"><img src="images/ca-e.png"; width="140px"; height="auto"></div>
+        <div id="botbien3"><img src="images/Water-Bubbles-PNG-Clipart.png"; width="80px"; height="auto"></div>
+        <div id="botbien4"><img src="images/Water-Bubbles-PNG-Clipart.png"; width="80px"; height="auto"></div>
+    </div>
+    <script src="js/change.js" rel="javascript"></script>
+</body>
+</html>
