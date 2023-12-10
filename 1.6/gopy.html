@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Góp ý</title>
+</head>
+<body style="background-color: rgba(63, 26, 133, 0.11);">
+    <h1>LIÊN HỆ / GÓP Ý</h1>
+    <hr color="black">
+    <form action="form.php" method="get" style="font-size: 20px; font-weight: bolder; margin-top: 10px;">
+    <fieldset style="border: 2px solid rgb(5, 5, 65);">
+        <legend style="color: rgb(5, 5, 65);">THÔNG TIN CỦA BẠN</legend>
+        HỌ VÀ TÊN: <input type="text" name="name" style="height: 25px; font-size: 20px; font-weight: 100; color: rgb(20, 14, 14); margin-top: 8px;" required/><br>
+        SỐ ĐIỆN THOẠI: <input type="text" name="phone" pattern="[0-9]{10}" maxlength="10" style="height: 25px; font-size: 20px; font-weight: 100; color: rgb(20, 14, 14); margin-top: 8px;" required/><br>
+        EMAIL: <input type="text" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" style="height: 25px; font-size: 20px; font-weight: 100; color: rgb(20, 14, 14); margin-top: 8px;" required/><br>
+    </fieldset>
+    <fieldset style="border: 2px solid rgb(5, 5, 65); margin-top: 10px;">
+        <legend style="color: rgb(5, 5, 65);">THÔNG ĐIỆP BẠN MUỐN GỬI ĐẾN</legend>
+        <textarea cols="90" rows="4" title="Nhắn gửi ít thôi nhé!, nhiều quá miễn đọc." name="loinhan" required style="font-size: larger; color: rgb(19, 42, 170);"></textarea>
+    </fieldset>
+    <input type="submit" value="GỬI" style="width: 150px; height: 40px; margin-top: 20px; font-family: 'Cambria'; font-weight: bolder; font-size: 25px; color: red;">
+    </form>
+</body>
+</html>
