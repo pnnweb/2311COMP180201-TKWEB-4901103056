@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>KIỂM TRA NĂM NHUẬN</h2>
+    <div>
+        Năm: <input id="txtNam" type="number"/>
+    </div>
+    <br>
+    <div>
+        Tháng: <input id="txtThang" type="number"/>
+    </div>
+    <br>
+    <button type="button">Kiểm tra</button>
+    <div id="ketqua1"></div>
+    <div id="ketqua2"></div>
+    <script src="/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           $("button").click(function(){
+                let nam=parseInt($("#txtNam").val());
+                let thang=parseInt($('#txtThang').val());
+                let laNamNhuan = false;
+                if((nam%400==0)||((nam%4==0) && (nam%100!=0))){
+                    laNamNhuan = true;
+                }
+                let soNgay=0;
+                switch(thang){
+                    case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+                        soNgay=31; break;
+                    case 2: soNgay=laNamNhuan?29:28; break;
+                    case 4: case 6: case 9: case 11:
+                        soNgay=30; break;
+                }
+                var htmlv=`Năm ${nam} là năm`+(laNamNhuan?' nhuận' : ' không nhuận');
+                $("#ketqua1").html(htmlv);
+                var htmlf=`Tháng ${thang} của năm đó có: `+soNgay+' ngày';
+                $("#ketqua2").html(htmlf);
+           });
+        });
+    </script>
+</body>
+</html>
