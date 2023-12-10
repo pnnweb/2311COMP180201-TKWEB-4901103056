@@ -1,5 +1,0 @@
-content="Responsive Resume Template"
-content="Xiaoying Riley at 3rd Wave Media"  
-Designed with love by Xiaoying Riley for developers.
-
-I'm a student, so I use this source code just for my study. Thank u.
