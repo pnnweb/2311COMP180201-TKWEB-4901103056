@@ -12,6 +12,7 @@
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
         <title>Halloween Invitation</title>
     </head>
@@ -19,33 +20,35 @@
         <img src="assets/img/shape-bg.png" alt="" class="shape__bg">
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
-            <nav class="nav container">
+            <nav class="nav container" style="background-color: rgba(133, 37, 8, 0.233); height: 50px; padding: 20px; border-radius: 10px;">
                 <a href="" class="nav__logo">
                     <img src="assets/img/logo-skull.png" alt="logo image">
-                    Halloween
+                    HALLOWEEN
                 </a>
-
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home</a>
+                            <a href="#home" class="nav__link active-link">HOME</a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#history" class="nav__link">History</a>
+                            <a href="#history" class="nav__link">HISTORY</a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#items" class="nav__link">Items</a>
+                            <a href="#minishop" class="nav__link">MINISHOP</a>
                         </li>
+                        
                         <li class="nav__item">
-                            <a href="#food" class="nav__link">Food</a>
+                            <a href="#images" class="nav__link">IMAGES</a>
                         </li>
+
                         <li class="nav__item">
-                            <a href="#party" class="nav__link">Party</a>
+                            <a href="#contact" class="nav__link">CONTACT</a>
                         </li>
+
                         <li class="nav__item">
-                            <a href="#buy" class="nav__link">Tickets</a>
+                            <a href="#register" class="nav__link">REGISTER</a>
                         </li>
                     </ul>
 
@@ -86,13 +89,13 @@
                     </div>
 
                     <img src="assets/img/home-pumpkin.png" alt="home image" class="home__img">
-
+                    
                     <img src="assets/img/home-tree1.png" alt="home image" class="home__tree-1">
                     <img src="assets/img/home-tree2.png" alt="home image" class="home__tree-2">
                 </div>
             </section>
 
-            <!--==================== ABOUT ====================-->
+            <!--==================== HISTORY ====================-->
             <section class="about section" id="history">
                 <div class="shape__small"></div>
                 <div class="shape__big"></div>
@@ -112,39 +115,120 @@
                 </div>
             </section>
 
-            <!--==================== ITEMS ====================-->
-            <section class="items section" id="items">
+            <!--==================== MINISHOP ====================-->
+            <section class="items section" id="minishop">
                 <div class="shape__big"></div>
 
-                <h2 class="section__title">List of items <br> "must have" in the Halloween party</h2>
+                <h2 class="section__title">Fundraising-Stand<br></h2>
+                <div class="home__data" style="margin: 0%; padding: 0%;">
+                    <p class="home__description" style="margin: 10  px;">
+                        Each product you bought, we will deduct 5% to help poor people in need!
+                    </p>
+                </div>
 
                 <div class="items__container container grid">
                     <article class="items__card">
-                        <img src="assets/img/item-apple.png" alt="items image" class="items__img">                        
-                        <h3 class="items__name">Candy</h3>
-                        <span class="items__price">For kids</span>
+                        <img src="assets/img/item-apple.png" alt="items image" class="items__img">
+                        
+                        <h3 class="items__name">Candy Apple</h3>
+                        <span class="items__price">$4.99</span>
+
+                        <button class="items__button">
+                            <i class="ri-shopping-cart-2-line"></i>
+                        </button>
                     </article>
 
                     <article class="items__card">
-                        <img src="assets/img/item-witch-hat.png" alt="items image" class="items__img">
+                        <img src="assets/img/item-broom.png" alt="items image" class="items__img">
                         
-                        <h3 class="items__name">Costume</h3>
-                        <span class="items__price">Choose Freely</span>
+                        <h3 class="items__name">Witch Broom</h3>
+                        <span class="items__price">$12.99</span>
+
+                        <button class="items__button">
+                            <i class="ri-shopping-cart-2-line"></i>
                         </button>
                     </article>
 
                     <article class="items__card">
                         <img src="assets/img/item-pumpkin.png" alt="items image" class="items__img">
+                        
                         <h3 class="items__name">Pumpkin</h3>
-                        <span class="items__price">Have a light</span>
+                        <span class="items__price">$7.99</span>
+
+                        <button class="items__button">
+                            <i class="ri-shopping-cart-2-line"></i>
                         </button>
                     </article>
 
+                    <article class="items__card">
+                        <img src="assets/img/item-spider.png" alt="items image" class="items__img">
+                        
+                        <h3 class="items__name">Spider</h3>
+                        <span class="items__price">$9.99</span>
+
+                        <button class="items__button">
+                            <i class="ri-shopping-cart-2-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="items__card">
+                        <img src="assets/img/item-witch-hat.png" alt="items image" class="items__img">
+                        
+                        <h3 class="items__name">Witch Hat</h3>
+                        <span class="items__price">$15.99</span>
+
+                        <button class="items__button">
+                            <i class="ri-shopping-cart-2-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="items__card">
+                        <img src="assets/img/nav-bat.png" alt="items image" class="items__img" style="padding-top: 60px;">
+                        
+                        <h3 class="items__name">Bat</h3>
+                        <span class="items__price">$8.99</span>
+
+                        <button class="items__button">
+                            <i class="ri-shopping-cart-2-line"></i>
+                        </button>
+                    </article>
                 </div>
             </section>
-                         <!--==================== CATEGORY ====================-->
-             <section class="category section" id="food">
-                <div class="shape__small"></div>
+
+            <!--==================== IMAGES ====================-->
+            <section class="items section" id="images">
+                <div class="shape__big"></div>
+
+                <h2 class="section__title">CREEPY IMAGES ABOUT EVENT</h2>
+
+                <div class="w3-content" style="max-width:800px">
+                    <img class="mySlides" src="https://img.thuthuat123.com/uploads/2019/10/28/anh-halloween-dang-so_042448362.jpg" style="width:100%">
+                    <img class="mySlides" src="https://img.thuthuat123.com/uploads/2019/10/28/anh-halloween-dep-nhat_042448456.jpg" style="width:100%">
+                    <img class="mySlides" src="https://img.thuthuatphanmem.vn/uploads/2018/10/27/anh-trang-phuc-hoa-trang-halloween-dep-nhat_105513016.jpg" style="width:100%">
+                    <img class="mySlides" src="https://img.thuthuatphanmem.vn/uploads/2018/10/27/anh-trang-phuc-hoa-trang-halloween-kinh-di_105513219.jpg" style="width:100%">
+                    <img class="mySlides" src="https://th.bing.com/th/id/R.ac1965fc3709a24b7d587e565705fe27?rik=gg7abP%2fRYbJTRQ&riu=http%3a%2f%2f2.bp.blogspot.com%2f_b04ad3HsVtI%2fTND9pGMXGhI%2fAAAAAAAAAHI%2fQCdu07iPtiU%2fs1600%2fIMG_2594.JPG&ehk=s8sXXzsdDT6rDNq0FbPIMvzpLXbVv3bAp02qlF5Caos%3d&risl=&pid=ImgRaw&r=0" style="width:100%">
+                    <img class="mySlides" src="https://img.thuthuatphanmem.vn/uploads/2018/10/27/trang-phcu-hoa-trang-halloween-dep-va-an-tuong_105514125.jpg" style="width:100%">
+                </div>
+                  
+                  <div class="w3-center">
+                    <div class="w3-section">
+                      <button class="w3-button" onclick="plusDivs(-1)">❮ Prev</button>
+                      <button class="w3-button" onclick="plusDivs(1)">Next ❯</button>
+                    </div>
+                    <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+                    <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+                    <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+                    <button class="w3-button demo" onclick="currentDiv(4)">4</button> 
+                    <button class="w3-button demo" onclick="currentDiv(5)">5</button> 
+                    <button class="w3-button demo" onclick="currentDiv(6)">6</button> 
+                  </div>                  
+
+                </div>
+            </section>
+
+            <!--==================== CONTACT ~ PARTY INFO (NO #) ====================-->
+            <section class="category section" >
+                <div class="shape__small">Hello</div>
 
                 <h2 class="section__title">Our Party's Food</h2>
 
@@ -193,8 +277,7 @@
                 </div>
             </section>
 
-            <!--==================== PARTY ====================-->
-            <section class="party section" id="party">
+            <section class="party section" id="contact">
                 <div class="party__container container grid">
                     <div class="party__data">
                         <h2 class="section__title">Halloween <br> party 31 October</h2>
@@ -203,8 +286,9 @@
                             We will have a great day for the Halloween day this year. The party will be placed in the Ho Chi Minh City University of Education <a href="https://www.google.com/maps/dir//280+%C4%90.+An+D%C6%B0%C6%A1ng+V%C6%B0%C6%A1ng,+Ph%C6%B0%E1%BB%9Dng+4,+Qu%E1%BA%ADn+5,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh+720000/@10.7613723,106.5997692,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x31752f1b8a072901:0x2fb4502ebd044212!2m2!1d106.6821711!2d10.7613832?entry=ttu" style="color: grey;">(280 An Duong Vuong, District 5, HCMC)</a>.
                         </p>
 
-                        <a href="#buy" class="button">
-                            Start the Party
+                        <span><b>Any question ?</b></span><br><br>
+                        <a href="https://www.facebook.com/clbtochucsukien/" class="button">
+                            CONTACT US IN FACEBOOK
                         </a>
                     </div>
 
@@ -217,28 +301,31 @@
                 </div>
             </section>
 
-            <!--==================== BUY ====================-->
-            <section class="party section" id="buy">
-                <div class="party__container container grid">
-                    <div class="party__data">
-                        <h2 class="section__title">PRICE: <br> 10$ / 1 per</h2>
-
-                        <p class="party__description">
-                            <b>(Food - Drink included)</b>
-                        </p> 
-                    </div>
-
-                    <div class="party__images">
-                        <img src="assets/img/category-ghost.png" alt="party image" class="party__img">
-
-                        <img src="assets/img/stars.png" alt="party image" class="party__star-1">
-                        <img src="assets/img/stars.png" alt="party image" class="party__star-2">
-                    </div>
-                </div>
+             <!--==================== REGISTER ====================-->
+             <section class="home section" id="register">
+                <div class="shape__small"></div>
+                <div class="shape__big"></div>
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            <span>REGISTER HERE</span>
+                            <img src="assets/img/about-scare.png" alt="home image" class="home__title-img-1">
+                            <img src="assets/img/category-witch-hat.png" alt="home image" class="home__title-img-2">
+                        </h1>
+                        <form action="/register.php" method="post">
+                            <label for="name"><b>Your name:</b></label><br>
+                            <input type="text" id="name" style="width: 300px; margin: 10px;"><br>
+                            <label for="email"><b>Your email:</b></label><br>
+                            <input type="email" id="email" style="width: 300px;  margin: 10px;"><br>
+                            <label for="phone"><b>Your phone number:</b></label><br>
+                            <input type="text" id="phone" style="width: 300px;  margin: 10px;"><br><br>
+                            <input type="submit" value="Register" style="background-color: rgb(197, 67, 27); padding: 0 20px;">
+                            <img src="assets/img/nav-bat.png" alt="home image" class="home__title-img-2">
+                          </form>                           
+                    </div>    
+                </div>        
             </section>
-
-        </main>
-
+           
         <!--==================== FOOTER ====================-->
         <footer class="footer section">
             <div class="footer__container container grid">
@@ -267,6 +354,36 @@
         <script src="assets/js/scrollreveal.min.js"></script>
 
         <!--=============== MAIN JS ===============-->
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+                if((slideIndex==1 && n!=-1)||(slideIndex==6 && n!=1)||(slideIndex>1 && slideIndex<6)){
+                    showDivs(slideIndex += n);
+                }
+            }
+            
+            function currentDiv(n) {
+              showDivs(slideIndex = n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              if (n > x.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-red", "");
+              }
+              x[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " w3-red";
+            }
+        </script>
         <script src="assets/js/main.js"></script>
     </body>
 </html>
